@@ -15,7 +15,6 @@ export class AuthResolver {
     @Args('signInInput') signInInput: SignInInput,
     @Context() context: any,
   ) {
-    const test = await this.authService.signIn(context.user);
-    return test;
+    return await this.authService.signIn(context.user);
   }
 }
