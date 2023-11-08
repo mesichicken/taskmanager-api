@@ -14,7 +14,7 @@ export class TaskResolver {
   @Query(() => [TaskModel], { nullable: 'items' })
   @UseGuards(JwtAuthGuard)
   async getTasks(
-    @Args('useId', { type: () => Int }) userId: number,
+    @Args('userId', { type: () => Int }) userId: number,
   ): Promise<Task[]> {
     return await this.taskService.getTasks(userId);
   }

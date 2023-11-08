@@ -31,7 +31,7 @@ type SignInResponse {
 }
 
 type Query {
-  getTasks(useId: Int!): [Task]!
+  getTasks(userId: Int!): [Task]!
   getUser(email: String!): User
 }
 
