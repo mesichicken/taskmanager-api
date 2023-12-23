@@ -25,7 +25,7 @@ model Task {
 enum Status {
   NOT_STARTED
   IN_PROGRESS
-  COMPULETED
+  COMPLETED
 }
 
 model User {
